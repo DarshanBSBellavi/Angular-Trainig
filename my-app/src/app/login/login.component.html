@@ -1,0 +1,45 @@
+<app-root></app-root>
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+      <div class="row justify-content-center align-items-center h-100">
+        <div class="col-5">
+          <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+            <div class="card-body ">
+                <h1 class="mb-4 pb-2 pb-md-0 mb-md-5 " style="text-align: center;">Login Form</h1>
+                        <form [formGroup]="loginform" (ngSubmit)="onSubmit()">
+
+                    <div class="row">
+                        <div class="form-outline form-white mb-4">
+                            <label for="exampleInputUserName" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="exampleInputUserName" formControlName="userName">
+                            
+                          </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-outline form-white mb-4">
+                            <label for="exampleInputPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword" formControlName="password">
+                            </div>
+                    </div>
+  
+                    <div class="row">
+                        <div class="form-outline form-white mb-4">
+                            <button type="submit" class="btn btn-primary" >Submit</button>
+                        </div>   
+                    </div>
+                    
+                    <div class="row">
+                        <div>
+                            <p class="mb-0">Don't have an account? <a  class="text-blue-50 fw-bold" routerLink="/signup" routerLinkActive="active" >Sign Up</a></p>
+                        </div>
+                    </div>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

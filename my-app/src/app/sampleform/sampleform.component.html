@@ -1,0 +1,68 @@
+<div class="container">
+    <form [formGroup]="sample" (ngSubmit)="save(sample.value)">
+    
+        <div class="row">
+            <div class="form-outline form-white mb-4">
+                <label class="form-label" for="userName">User Name</label>
+                <input type="text" id="userName" class="form-control" formControlName="userName" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-outline form-white mb-4">
+                <label class="form-label" for="email">Email</label>
+                <input type="text" id="email" class="form-control" formControlName="email" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-outline form-white mb-4">
+                <label class="form-label" for="phoneNumber">Phone Number</label>
+                <input type="tel" id="phoneNumber" class="form-control " formControlName="phoneNumber" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-outline form-white mb-4">
+                <label class="form-label" for="password">Password</label>
+                <input type="password" id="password" class="form-control" formControlName="password" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-outline form-white mb-4">
+                <label class="form-label" for="typePasswordX">Location</label>
+                <input type="text" id="location" class="form-control " formControlName="location" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-outline form-white mb-4">
+                <button type="Submit" class="btn btn-primary" >Register</button>
+            </div>   
+        </div>
+         
+    </form>
+</div>
+<div class="container2">
+<table style="border: 5px solid;">
+    <tr>
+        <th style="border: 5px solid;">NAME</th>
+        <th style="border: 5px solid;">EMAIL</th>
+        <th style="border: 5px solid;">PHONE</th>
+        <th style="border: 5px solid;">PASSWORD</th>
+        <th style="border: 5px solid;">LOCATION</th>
+        <th style="border: 5px solid;">DELETE</th>
+        <th style="border: 5px solid;">Update</th>
+    </tr>
+    <tr *ngFor="let use of savesample">
+        <th style="border: 5px solid;">{{use.userName}}</th>
+        <th style="border: 5px solid;">{{use.email}}</th>
+        <th style="border: 5px solid;">{{use.phoneNumber}}</th>
+        <th style="border: 5px solid;">{{use.password}}</th>
+        <th style="border: 5px solid;">{{use.location}}</th>
+        <th style="border: 5px solid;"><button (click)="delete(use)">Delete</button></th>
+        <th style="border: 5px solid;"><button (click)="update(use)">update</button></th>
+    </tr>
+</table>
+</div>

@@ -1,0 +1,98 @@
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+      <div class="row justify-content-center align-items-center h-100">
+        <div class="col-5">
+          <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+            <div class="card-body ">
+              <h1 class="mb-4 pb-2 pb-md-0 mb-md-5 " style="text-align: center;">Registration Form</h1>
+
+              <form [formGroup]="form" (ngSubmit)="onSubmit(form)">
+                <div class="form-group">
+                    <div class="row">
+                    <div class="form-outline form-white mb-4">
+                        <label class="form-label" for="firstName">User Name</label>
+                        <input type="text" id="userName" class="form-control" formControlName="userName" />
+                    </div>
+                </div>
+
+  
+               
+
+                <div class="row">
+                  
+                        <div class="form-outline form-white mb-4">
+                            <label class="form-label" for="emailAddress">Email</label>
+                            <input type="email" id="emailAddress" class="form-control" formControlName="email" />
+                        </div>
+                    
+                </div>
+
+                <div class="row">
+                    
+                        <div class="form-outline form-white mb-4">
+                            <label class="form-label" for="phoneNumber">Phone Number</label>
+                             <input type="tel" id="phoneNumber" class="form-control " formControlName="phoneNumber" />
+                        </div>
+                     
+                </div>
+
+                <div class="row">
+                    <div class="form-outline form-white mb-4">
+                        <label class="form-label" for="typePasswordX"> New Password</label>
+                        <input type="password" id="typePasswordX" class="form-control" formControlName="password" />
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="form-outline form-white mb-4">
+                        <label class="form-label" for="typePasswordX">Confirm New Password</label>
+                        <input type="password" id="typeConfirmPasswordX" class="form-control " formControlName="confirmPassword" />
+                    </div>
+                </div>
+                </div>
+  
+                <div class="row">
+                    <div class="form-outline form-white mb-4">
+                        <button type="Submit" class="btn btn-primary" >Register</button>
+                    </div>   
+                </div>
+
+                <div>
+                    <p class="mb-0"> have an account? <a  class="text-blue-50 fw-bold" routerLink="/login" routerLinkActive="active" >Login</a></p>
+                </div>
+            
+  
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <h1>{{title}}</h1>
+ 
+  <div>
+    <div>
+      <label>Name: </label>
+      <input [(ngModel)]="person.name" />
+    </div>
+    <div>
+      <button (click)="addPerson()">Add</button>
+    </div>
+  </div>
+   
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let person of people;">
+        <td>{{person.id}}</td>
+        <td>{{person.name}}</td>
+      </tr>
+    </tbody>
+  </table> -->

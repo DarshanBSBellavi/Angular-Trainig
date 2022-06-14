@@ -1,0 +1,31 @@
+
+  
+    <div class="container">
+      <form [formGroup]="contactForm" (submit)="onSubmit()">
+        <div class="form-group">
+          <div class="row">
+            
+              <label>Enter the First Name</label>
+              <input type="text" formControlName="FirstName" class="form-control">
+          </div>
+          <br>
+              <div class="row">
+              <label>Enter the Last Name</label>
+              <input type="text" formControlName="LastName" class="form-control">
+              </div>
+        </div>
+         <br>
+  
+        <div class="row mb-2">
+            <div class="col-sm-6 mb-4">
+            
+                <input class="btn btn-primary" type="submit" value="Add User">
+           
+            </div>
+          </div>
+        
+
+  
+      </form>
+    </div>
+ 

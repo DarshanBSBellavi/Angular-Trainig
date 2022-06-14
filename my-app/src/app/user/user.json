@@ -1,0 +1,30 @@
+[{
+    "id": 1,
+    "name": "DARSHAN",
+    "username": "DARS",
+    "email": "DArshan@gmail.com"
+  },
+  {
+    "id": 2,
+    "name": "Sunil",
+    "username": "suni",
+    "email": "sunil@gmail.com"
+  },{
+    "id": 3,
+    "name": "Arun KUMAR",
+    "username": "arun",
+    "email": "Arun@gmail.com"
+  },{
+    "id": 4,
+    "name": "Megesh",
+    "username": "Megesh",
+    "email": "Megesh@gmail.com"
+  },{
+    "id": 5,
+    "name": "Sandesh",
+    "username": "sandy",
+    "email": "Sandy@gmail.com"
+  }
+
+  
+]
