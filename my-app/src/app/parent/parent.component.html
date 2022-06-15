@@ -1,0 +1,26 @@
+<div class="container">
+<div class="col-6 mr-5 p-5 mt-5" style="border: 1px solid;">
+    <h1>Parrent Component</h1>
+<div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-2 col-form-label">Name</label>
+    <div class="col-sm-10">
+      <input type="text"  class="form-control" id="name" #name>
+    </div>
+  </div>
+  <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Age</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="age" #age><br>
+      <button class="btn-primary" (click)="transfer(name.value,age.value)">Add</button>
+    </div>
+    {{inputage}}
+  </div>
+</div>
+
+<div class="col-6 ms-5 p-5 mt-5"style="border: 1px solid;">
+<app-child [name]="inputname" [age]="inputage" [user]="userinfo" (myOutput) ="GetChildData($event)"> 
+    
+</app-child>
+
+</div>
+</div>

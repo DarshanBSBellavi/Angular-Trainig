@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
 	{ path: 'service', component: ServicesComponent },
 	{ path: 'contuctus', component: ContactusComponent },
-  { path: '', component: LoginComponent },
+  // { path: '', component: LoginComponent },
 	{ path: 'signup', component: SignupComponent },
   { path: 'adduser', component: AddusersComponent },
   { path: 'individualuser/:id/:userName/:phoneNumber/:email/:password/:confirmPassword', component: IndididualuserinfoComponent },

@@ -22,6 +22,8 @@ import { UserinputdialogComponent } from './userinputdialog/userinputdialog.comp
 import { SampleformComponent } from './sampleform/sampleform.component';
 import { NavigationbarComponent } from './navigationbar/navigationbar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AddusersComponent,
     UserinputdialogComponent,
     SampleformComponent,
-    NavigationbarComponent
+    NavigationbarComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

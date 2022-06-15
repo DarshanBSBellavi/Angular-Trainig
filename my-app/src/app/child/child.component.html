@@ -1,0 +1,11 @@
+
+    <h1>Child Component</h1>
+    <h1>{{user.inputname}} and {{user.inputage}}</h1>
+    <!-- <select>
+    <option *ngFor="let use of disticts">
+        {{use}}
+      </option>
+    </select> -->
+    <input type="text" class="form-control" id="myyname" #myyname><br>
+    <button class="btn-primary" (click)="sendValues(myyname.value)"> Send Data </button>
+      
