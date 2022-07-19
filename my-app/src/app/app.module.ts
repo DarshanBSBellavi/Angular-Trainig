@@ -24,6 +24,8 @@ import { NavigationbarComponent } from './navigationbar/navigationbar.component'
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { ReadsampleapiComponent } from './readsampleapi/readsampleapi.component';
+import { RxjssampleComponent } from './rxjssample/rxjssample.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,10 @@ import { ChildComponent } from './child/child.component';
     SampleformComponent,
     NavigationbarComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    ReadsampleapiComponent,
+    RxjssampleComponent,
+    
   ],
   imports: [
     BrowserModule,

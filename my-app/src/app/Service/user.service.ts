@@ -12,7 +12,7 @@ export class UserService {
 
   constructor(private http:HttpClient) { }
   getuser(){
-    return this.http.get<any>('http://localhost:3000/signup')
+    return this.http.get<any>('http://localhost:3000/post')
   }
 
   postuser(data:any):Observable<any>{

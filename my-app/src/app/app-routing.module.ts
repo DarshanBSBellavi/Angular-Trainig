@@ -11,6 +11,7 @@ import { IndididualuserinfoComponent } from './indididualuserinfo/indididualuser
 import { AddusersComponent } from './addusers/addusers.component';
 import { SampleformComponent } from './sampleform/sampleform.component';
 import { NavigationbarComponent } from './navigationbar/navigationbar.component';
+import { RxjssampleComponent } from './rxjssample/rxjssample.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: 'sample', component: SampleformComponent },
   {path: 'user', component: UserComponent },
   {path: 'navi', component: NavigationbarComponent },
+  {path: 'RXJS', component: RxjssampleComponent },
  
 ];
 

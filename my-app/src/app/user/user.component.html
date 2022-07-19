@@ -1,4 +1,4 @@
-<app-navigationbar [title]="title"></app-navigationbar>
+<!-- <app-navigationbar [title]="title"></app-navigationbar> -->
 <br>
 <div class="container">
     <table class="table" id='tab'>
@@ -25,6 +25,7 @@
         </tr>
         </thead>
         <tbody >
+            
         <tr *ngFor="let emp of userinfo">
             <!-- <td>{{emp.id}}</td>
             <td>{{emp.first_name}}</td>
@@ -40,8 +41,8 @@
             <td>{{emp.updated_at}}</td> -->
                 
            
-            <td><a [routerLink]="['/individualuser', emp.id,emp.phoneNumber,emp.userName,emp.email,emp.password,emp.confirmPassword]">
-                {{emp.id}}</a></td>
+            <!-- <td><a [routerLink]="['/individualuser', emp.id,emp.phoneNumber,emp.userName,emp.email,emp.password,emp.confirmPassword]">
+                {{emp.id}}</a></td>  -->
             <!-- <td><a [routerLink]="['/individualuser']" [queryParams]="{id:emp.id,
                                                                     name:emp.userName, 
                                                                     email:emp.email,
@@ -54,7 +55,9 @@
             <td>{{emp.password}}</td>
             <td>{{emp.confirmPassword}}</td>
            
-    
+            <!-- <td>{{emp.id}}</td>
+            <td>{{emp.imageUrl}}</td>
+            <td>{{emp.email}}</td> -->
         </tr>
         </tbody>
     </table>				
